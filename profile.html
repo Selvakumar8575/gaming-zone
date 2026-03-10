@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Profile</title>
+<style>
+body{
+font-family: Arial;
+text-align:center;
+background:#0f2027;
+color:white;
+}
+
+.profile-box{
+background:white;
+color:black;
+width:300px;
+margin:100px auto;
+padding:20px;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+<a href="home.html" class="back-arrow">← Back</a>
+<h1>Profile</h1>
+
+<div class="profile-card">
+    <h2>User Details</h2>
+
+    <p><b>Username:</b> <span id="username"></span></p>
+    <p><b>Email:</b> <span id="email"></span></p>
+    <p><b>Login Time:</b> <span id="loginTime"></span></p>
+    <p><b>Games Played:</b> <span id="gamesPlayed"></span></p>
+    <p><b>Total Play Time:</b> <span id="playTime"></span></p>
+</div>
+
+<script src="profile.js"></script>
+
+<script>
+const username = localStorage.getItem("username");
+const email = localStorage.getItem("email");
+const loginTime = localStorage.getItem("loginTime");
+const gamesPlayed = localStorage.getItem("gamesPlayed") || 0;
+const playTime = localStorage.getItem("playTime") || 0;
+
+document.getElementById("username").innerText = username;
+document.getElementById("email").innerText = email;
+document.getElementById("loginTime").innerText = loginTime;
+document.getElementById("gamesPlayed").innerText =
+localStorage.getItem("gamesPlayed") || 0;
+
+document.getElementById("playTime").innerText =
+(localStorage.getItem("totalPlayTime") || 0) + " mins";
+</script>
+</body>
+</html>

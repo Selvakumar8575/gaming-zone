@@ -1,0 +1,18 @@
+<h2>🏆 Leaderboard</h2>
+
+<ul id="board"></ul>
+
+<script>
+
+let data=JSON.parse(localStorage.getItem("leaderboard"))||[];
+
+let board=document.getElementById("board");
+
+data.forEach(function(item){
+
+board.innerHTML+=
+"<li>"+item.game+" - "+item.score+"</li>";
+
+});
+
+</script>

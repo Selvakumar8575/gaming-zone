@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Gaming Zone - Home</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<img src="image/bg.jpg" class="bg">
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="left-header">
+<img src="image/logo1.jpeg" class="logo">
+</div>
+
+<div class="center-header">
+<h1>GAMING ZONE</h1>
+</div>
+
+<div class="right-header">
+<div id="userPanel"></div>
+</div>
+
+</div>
+
+
+<!-- GAME SECTION -->
+
+<div class="games-section">
+
+<!-- games section -->
+<div class="games-container">
+
+</div>
+<div id="homeSection"> 
+
+<h2 class="games-title">🎮 Games Collection</h2>
+<p class="games-desc">
+Welcome to <b>Gaming Zone</b>, an online gaming platform where users can explore and play a variety of fun browser-based games. 
+This website offers different categories of games such as puzzle, racing, strategy, and arcade games. 
+Users can easily search and play their favorite games, track their activity through their profile, and enjoy an engaging gaming experience.
+</p>
+
+<div class="search-container">
+
+<button class="back-btn" onclick="history.back()">⬅</button>
+
+<input type="text" id="gameSearch" placeholder="Search games..." onkeyup="searchGames()">
+
+</div>
+
+<div class="game-grid">
+
+<div class="game-card" data-category="action" onclick="openGame('snake')">
+<img src="image/snake.png">
+<p>Snake</p>
+</div>
+
+<div class="game-card"  onclick="openGame('tictactoe')">
+<img src="image/tictactoe.png">
+<p>Tic Tac Toe</p>
+</div>
+
+<div class="game-card"  onclick="openGame('car')">
+<img src="image/car.png">
+<p>Car Game</p>
+</div>
+
+<div class="game-card"  onclick="openGame('chess')">
+<img src="image/chess.png">
+<p>Chess</p>
+</div>
+
+<div class="game-card"  onclick="openGame('racing')">
+<img src="image/racing.png">
+<p>Horse Racing</p>
+</div>
+
+<div class="game-card" onclick="openGame('Flappy_Bird')">
+<img src="image/flappy.png">
+<p>Flappy Bird</p>
+</div>
+
+<div class="game-card" onclick="openGame('Bubble_Blast_Game')">
+<img src="image/bubble.png">
+<p>Bubble Blast</p>
+</div>
+
+<div class="game-card" onclick="openGame('Candy_Crush_Saga')">
+<img src="image/candy.png">
+<p>Candy Crush Saga</p>
+</div>
+
+<div class="game-card" onclick="openGame('Rock_Paper_Scissors')">
+<img src="image/rock.png">
+<p>Rock Paper Scissors</p>
+</div>
+
+<div class="game-card" onclick="openGame('Doodle_Jump')">
+<img src="image/doodle.png">
+<p>Doodle Jump</p>
+</div>
+
+<div class="game-card" onclick="openGame('JavaScript-Quiz-App-Game')">
+<img src="image/quiz.png">
+<p> Quiz Game</p>  
+</div>
+
+<div class="game-card" onclick="openGame('Whack_a_Mole')">
+<img src="image/whack.png">
+<p>Whack a Mole</p>
+</div>
+
+</div>
+
+
+
+<footer class="footer">
+© 2026 Gaming Zone | Selvakumar | All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

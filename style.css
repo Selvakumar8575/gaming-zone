@@ -1,0 +1,359 @@
+.bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+/* LOGO */
+
+.logo-box{
+position:absolute;
+top:20px;
+left:20px;
+}
+
+.logo-box img{
+width:45px;
+border-radius:10px;
+box-shadow:0 0 10px rgb(245, 240, 240);
+}
+
+/* TITLE */
+
+.title{
+position:absolute;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+font-size:22px;
+letter-spacing:3px;
+font-weight:bold;
+background:rgba(243, 240, 240, 0.901);
+padding:6px 18px;
+border-radius:10px;
+}
+
+/* CENTER BOX */
+
+.content-box{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.55);
+padding:40px;
+border-radius:20px;
+text-align:center;
+backdrop-filter:blur(10px);
+box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+.content-box h1{
+color:white;
+font-size:40px;
+margin-bottom:20px;
+text-shadow:0 0 15px black;
+}
+
+/* BUTTON */
+
+.btn{
+padding:12px 28px;
+margin:10px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.explore{
+background:#00c853;
+color:white;
+}
+
+.login{
+background:#03a9f4;
+color:white;
+}
+
+.register{
+background:#ffc107;
+}
+
+.footer{
+position:fixed;
+bottom:10px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(0,0,0,0.6);
+color:white;
+padding:6px 18px;
+border-radius:10px;
+font-size:14px;
+backdrop-filter:blur(5px);
+}
+
+form input{
+width:250px;
+padding:10px;
+margin:8px;
+border:none;
+border-radius:8px;
+outline:none;
+}
+
+.user-panel{
+
+position:absolute;
+top:20px;
+right:20px;
+color:white;
+
+}
+
+.user-menu{
+
+background:rgba(0, 0, 0, 0.6);
+padding:10px;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+.dropdown{
+
+display:none;
+margin-top:5px;
+
+}
+
+.user-menu:hover .dropdown{
+
+display:block;
+
+}
+
+.dropdown a{
+
+display:block;
+color:white;
+text-decoration:none;
+padding:5px;
+
+}
+
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+background:rgba(0,0,0,0.6);
+box-shadow: 0 4px rgba(0,0,0,0,6);
+
+}
+
+/* LOGO */
+
+.logo{
+
+width:45px;
+height:45px;
+border-radius:8px;
+
+}
+
+/* TITLE */
+
+.center-header h1{
+
+color:white;
+font-size:28px;
+letter-spacing:2px;
+
+}
+
+/* USER PANEL */
+
+.right-header{
+
+color:white;
+text-align:right;
+font-size:14px;
+
+}
+
+.games-title{
+text-align:center;
+font-size:32px;
+color:rgba(254, 248, 248, 0.931);
+margin:20px;
+letter-spacing:3px;
+border-bottom:2px solid rgba(16, 16, 16, 0.676);
+display:inline-block;
+padding-bottom:10px;
+}
+
+.game-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+padding:40px;
+}
+
+.game-card{
+background:white;
+border-radius:15px;
+padding:20px;
+text-align:center;
+transition:0.3s;
+cursor:pointer;
+}
+
+.game-card img{
+width:70px;
+height:70px;
+margin-bottom:10px;
+}
+
+.game-card p{
+font-weight:bold;
+}
+
+.game-card:hover{
+transform:scale(1.08);
+background:#ffd54f;
+}
+
+.backBtn{
+position:absolute;
+top:20px;
+left:20px;
+padding:10px 20px;
+background:#ff4b2b;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+.backBtn:hover{
+background:#ff1e00;
+}
+
+.top-bar{
+position:absolute;
+top:10px;
+left:10px;
+display:flex;
+gap:10px;
+}
+
+.backBtn,
+.musicBtn{
+padding:8px 15px;
+border:none;
+background:#333;
+color:white;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+.backBtn:hover,
+.musicBtn:hover{
+background:#555;
+}
+
+.backBtn{
+position:fixed;
+top:20px;
+left:20px;
+padding:8px 15px;
+background:#333;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+z-index:9999;
+}
+.search-container{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin:20px;
+}
+
+#gameSearch{
+padding:10px;
+width:250px;
+border-radius:20px;
+border:none;
+outline:none;
+font-size:16px;
+}
+
+.back-btn{
+padding:8px 12px;
+border:none;
+border-radius:50%;
+background:#333;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+.back-btn:hover{
+background:#555;
+}
+
+
+.profile-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    width:350px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.profile-card h2{
+    margin-bottom:20px;
+}
+
+.profile-card p{
+    font-size:16px;
+    margin:8px 0;
+}
+
+.back-arrow{
+position:absolute;
+top:20px;
+left:20px;
+font-size:18px;
+text-decoration:none;
+color:white;
+background:#333;
+padding:8px 12px;
+border-radius:6px;
+}
+
+.back-arrow:hover{
+background:#555;
+}
+.games-desc{
+text-align:center;
+width:70%;
+margin:10px auto 20px;
+font-size:20px;
+color:white;
+line-height:1.6;
+}
